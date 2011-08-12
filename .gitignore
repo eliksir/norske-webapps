@@ -3,7 +3,6 @@
 .DS_Store
 *config.php
 .htaccess
-workspace/
 manifest/
 *.esproj
 *~
@@ -11,3 +10,5 @@ manifest/
 install-log.txt
 _docs/
 symphony-2.wiki/
+*.sass-cache
+workspace/screenshots/*

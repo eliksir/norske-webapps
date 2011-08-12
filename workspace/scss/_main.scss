@@ -1,0 +1,250 @@
+body {
+}
+
+body > header {
+	height: 36px;
+	padding: 30px 0 24px 0;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+
+	nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		ul {
+			li {
+				float: left;
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+header .content,
+#content,
+footer .content {
+	position: relative;
+	@include container;
+}
+
+#content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	aside:first-child {
+		@include column(3);
+	}
+	aside:last-child {
+		@include column(3, true);
+	}
+
+	.main:first-child {
+		@include column(9, false);
+	}
+	.main:last-child {
+		@include column(9, true);
+	}
+}
+
+
+/*
+ * Featured apps on front page
+ */
+#featured-apps {
+
+	ul {
+		float: right;
+		width: span(1) + (0.5 * $blueprint-grid-width);
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	article {
+		//@include single-box-shadow(#cccccc, 0px, 3px, 2px);
+		display: none;
+		position: relative;
+		width: span(8) - (0.5 * $blueprint-grid-width);
+
+		.info {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 10px;
+			border-bottom: 1px solid #e6e6e6;
+			background-color: #f9f9f9; //rgba(255, 255, 255, 1);
+
+			h1 {
+				margin: 0;
+				font-size: 1.62em;
+				line-height: 1;
+			}
+			p {
+				margin: 0;
+				line-height: 1.62;
+			}
+			p.short-description {
+				position: absolute;
+				left: span(3);
+				top: 0;
+				margin: 10px 10px 10px 0;
+				font-size: 1.231em;
+				line-height: 1.3125;
+			}
+		}
+	}
+	article.show {
+		display: block;
+	}
+}
+
+section.ordering ul, section.categories ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+section.ordering li, section.categories li {
+	margin: 2px 0;
+
+	a, label {
+		display: block;
+		padding: 5px 10px;
+		border-bottom: 1px solid #e6e6e6;
+		text-decoration: none;
+		background-color: #f9f9f9;
+	}
+
+	span.count, input {
+		float: right;
+	}
+}
+
+section.app-grid {
+	@include container;
+
+	& > h1 {
+		margin: 30px 0 10px 0;
+		font-size: 1.62em;
+
+		a {
+			font-size: 0.62em;
+			font-weight: normal;
+			text-decoration: none;
+		}
+	}
+
+	article {
+		@include column(3);
+
+		img {
+			display: block;
+		}
+
+		& > a {
+			text-decoration: none;
+			color: #222222;
+		}
+
+		h1 {
+			margin: 10px 0 0 0;
+			font-size: 1.231em;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline;
+				list-style-type: none;
+			}
+		}
+	}
+	article:nth-of-type(3) {
+		@include column(3, last);
+	}
+
+	hr {
+		clear: left;
+		border-top: 0px;
+		margin-bottom: 30px;
+	}
+}
+
+article#app {
+	header {
+		position: relative;
+
+		h1 {
+			margin: 0;
+			font-size: 1.85em;
+
+			span.developer {
+				font-size: 0.55em;
+				font-weight: normal;
+			}
+		}
+
+		#sharing {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.content {
+		@include container;
+
+		.screenshots {
+			@include column(3);
+
+			img {
+				display: block;
+				margin: 1.62em 0;
+			}
+		}
+		.description {
+			@include column(6, true);
+
+			p.summary {
+				margin: 1.3125em 0;
+				font-size: 1.23em;
+				line-height: 1.3125;
+			}
+
+			p {
+				margin: 1.62em 0;
+			}
+		}
+	}
+}
+
+section#price-and-register {
+	p.price {
+		margin: 0;
+		padding: 10px;
+		border: 1px solid #e6e6e6;
+		background-color: #f9f9f9;
+		font-weight: bold;
+	}
+	a {
+		display: block;
+		margin: 5px 0;
+		padding: 5px 10px;
+		background-color: #002868;
+		color: #ffffff;
+		text-decoration: none;
+		font-size: 1.23em;
+	}
+}
