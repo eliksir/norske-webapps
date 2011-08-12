@@ -242,9 +242,15 @@ section#price-and-register {
 		display: block;
 		margin: 5px 0;
 		padding: 5px 10px;
-		background-color: #002868;
-		color: #ffffff;
+		background-color: #B2BED1;
 		text-decoration: none;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 		font-size: 1.23em;
+
+		&:hover {
+			background-color: #002868;
+			color: #ffffff;
+			text-shadow: none;
+		}
 	}
 }

@@ -712,10 +712,16 @@ section#price-and-register a {
   display: block;
   margin: 5px 0;
   padding: 5px 10px;
+  background-color: #B2BED1;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+  font-size: 1.23em;
+}
+/* line 250, ../scss/_main.scss */
+section#price-and-register a:hover {
   background-color: #002868;
   color: #ffffff;
-  text-decoration: none;
-  font-size: 1.23em;
+  text-shadow: none;
 }
 
 /* ==|== non-semantic helper classes ========================================

@@ -43,6 +43,3 @@
 [submodule "extensions/datemodified"]
 	path = extensions/datemodified
 	url = git://github.com/czheng/datemodified.git
-[submodule "extensions/system_date_field"]
-	path = extensions/system_date_field
-	url = git://github.com/symphonycms/system_date_field.git

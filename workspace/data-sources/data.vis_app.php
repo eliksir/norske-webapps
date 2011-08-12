@@ -49,7 +49,7 @@
 					'website' => 'http://webapps',
 					'email' => 'frode@e5r.no'),
 				'version' => 'Symphony 2.2.2',
-				'release-date' => '2011-08-12T15:36:02+00:00'
+				'release-date' => '2011-08-12T16:42:52+00:00'
 			);
 		}
 
