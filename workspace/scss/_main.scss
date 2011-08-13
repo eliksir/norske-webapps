@@ -52,6 +52,12 @@ footer .content {
  * Featured apps on front page
  */
 #featured-apps {
+	height: 342px;
+
+	a {
+		text-decoration: none;
+		color: #222222;
+	}
 
 	ul {
 		float: right;
@@ -71,7 +77,6 @@ footer .content {
 
 	article {
 		//@include single-box-shadow(#cccccc, 0px, 3px, 2px);
-		display: none;
 		position: relative;
 		width: span(8) - (0.5 * $blueprint-grid-width);
 
@@ -102,9 +107,6 @@ footer .content {
 				line-height: 1.3125;
 			}
 		}
-	}
-	article.show {
-		display: block;
 	}
 }
 
@@ -252,5 +254,12 @@ section#price-and-register {
 			color: #ffffff;
 			text-shadow: none;
 		}
+	}
+}
+
+table#facts {
+	th {
+		text-align: left;
+		padding-right: 14px;
 	}
 }

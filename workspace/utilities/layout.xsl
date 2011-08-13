@@ -53,6 +53,7 @@
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 			<script><![CDATA[window.jQuery || document.write('<script src="/workspace/js/libs/jquery-1.6.2.min.js"><\/script>')]]></script>
+			<script src="{$workspace}/js/app.js"></script>
 
 			<!-- TODO: Activate Google Analytics
 			<script>

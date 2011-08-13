@@ -16,7 +16,7 @@
 				pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra.
 			</p>
 			<p>
-				<a href="">Hva er webapps?</a> <a href="">Hvem står bak?</a>
+				<a href="">Hva er webapps?</a>&#160;<a href="">Hvem står bak?</a>
 			</p>
 
 			<section class="categories">
@@ -76,21 +76,19 @@
 	<xsl:template match="fremhevede/entry">
 		<xsl:variable name="bilde" select="skjermbilder/item[hoved]/bilde" />
 		<article>
-			<xsl:if test="position() = 1">
-				<xsl:attribute name="class">show</xsl:attribute>
-			</xsl:if>
-			<xsl:if test="$bilde">
-				<!--img src="/image/2/574/340/2{$bilde/@path}/{$bilde/filename}" width="574" height="340" /-->
-				<img src="/image/2/608/342/2{$bilde/@path}/{$bilde/filename}" width="608" height="342" />
-			</xsl:if>
-			<div class="info">
-				<h1><xsl:value-of select="navn" /></h1>
-				<p>fra <xsl:value-of select="utvikler/item[1]/navn" /></p>
-
-				<p class="short-description">
-					<xsl:value-of select="undertittel" />
-				</p>
-			</div>
+			<a href="{$root}/apps/{navn/@handle}">
+				<xsl:if test="$bilde">
+					<!--img src="/image/2/574/340/2{$bilde/@path}/{$bilde/filename}" width="574" height="340" /-->
+					<img src="/image/2/608/342/2{$bilde/@path}/{$bilde/filename}" width="608" height="342" />
+				</xsl:if>
+				<div class="info">
+					<h1><xsl:value-of select="navn" /></h1>
+					<p>fra <xsl:value-of select="utvikler/item[1]/navn" /></p>
+					<p class="short-description">
+						<xsl:value-of select="undertittel" />
+					</p>
+				</div>
+			</a>
 		</article>
 	</xsl:template>
 

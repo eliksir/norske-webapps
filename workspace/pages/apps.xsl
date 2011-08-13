@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:e5r="http://e5r.no/xml">
 
 	<xsl:include href="../utilities/layout.xsl" />
 	<xsl:include href="../utilities/urlencode.xsl" />
+	<xsl:include href="../utilities/dates.xsl" />
+
+	<xsl:param name="url-type" />
 
 	<xsl:template name="content">
 		<xsl:choose>
@@ -143,29 +147,51 @@
 		<li>
 			<label>
 				<xsl:value-of select="navn" />
-				<input type="checkbox" name="nokkelord" value="{@handle}" />
+				<input type="checkbox" name="nokkelord" value="{navn/@handle}">
+					<xsl:if test="contains($url-type, navn/@handle)">
+						<xsl:attribute name="checked" />
+					</xsl:if>
+				</input>
 			</label>
 		</li>
 	</xsl:template>
-
-
+	
+	<!--
+		A thumb nail screenshot with a link to the full size image.
+	-->
 	<xsl:template match="skjermbilder/item">
 		<a href="{$workspace}{bilde/@path}/{bilde/filename}">
 			<img src="{$root}/image/1/232/0{bilde/@path}/{bilde/filename}" width="232" />
 		</a>
 	</xsl:template>
 
+	<!--
+		Facts about the webapp.
+	-->
 	<xsl:template match="vis-app/entry" mode="facts">
-		<p>
-			Utvikler: <a href="{utvikler/item[1]/nettside}"><xsl:value-of select="utvikler/item[1]/navn" /></a><br />
-			Kategorier:
-				<xsl:for-each select="nokkelord/item">
-					<a href="{$root}/apps/?type={@handle}"><xsl:value-of select="." /></a>
-					<xsl:if test="position() != last()">, </xsl:if>
-				</xsl:for-each><br />
-			Lagt til: <xsl:value-of select="opprettet" /><br />
-			Sist oppdatert: <xsl:value-of select="oppdatert" />
-		</p>
+		<table id="facts">
+			<tr>
+				<th scope="row">Utvikler</th>
+				<td><a href="{utvikler/item[1]/nettside}"><xsl:value-of select="utvikler/item[1]/navn" /></a></td>
+			</tr>
+			<tr>
+				<th scope="row">Kategorier</th>
+				<td>
+					<xsl:for-each select="nokkelord/item">
+						<a href="{$root}/apps/?type={@handle}"><xsl:value-of select="." /></a>
+						<xsl:if test="position() != last()">, </xsl:if>
+					</xsl:for-each>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">Lagt til</th>
+				<td><xsl:value-of select="e5r:format-date('j. F Y', opprettet)" /></td>
+			</tr>
+			<tr>
+				<th scope="row">Sist oppdatert</th>
+				<td><xsl:value-of select="e5r:format-date('j. F Y', oppdatert)" /></td>
+			</tr>
+		</table>
 	</xsl:template>
 
 	<xsl:template name="disqus">

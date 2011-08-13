@@ -482,7 +482,16 @@ footer .content {
 /*
  * Featured apps on front page
  */
-/* line 56, ../scss/_main.scss */
+/* line 54, ../scss/_main.scss */
+#featured-apps {
+  height: 342px;
+}
+/* line 57, ../scss/_main.scss */
+#featured-apps a {
+  text-decoration: none;
+  color: #222222;
+}
+/* line 62, ../scss/_main.scss */
 #featured-apps ul {
   float: right;
   width: 102px;
@@ -490,21 +499,20 @@ footer .content {
   padding: 0;
   list-style-type: none;
 }
-/* line 63, ../scss/_main.scss */
+/* line 69, ../scss/_main.scss */
 #featured-apps ul li {
   margin-bottom: 10px;
 }
-/* line 66, ../scss/_main.scss */
+/* line 72, ../scss/_main.scss */
 #featured-apps ul li:last-child {
   margin-bottom: 0;
 }
-/* line 72, ../scss/_main.scss */
+/* line 78, ../scss/_main.scss */
 #featured-apps article {
-  display: none;
   position: relative;
   width: 608px;
 }
-/* line 78, ../scss/_main.scss */
+/* line 83, ../scss/_main.scss */
 #featured-apps article .info {
   position: absolute;
   left: 0;
@@ -514,18 +522,18 @@ footer .content {
   border-bottom: 1px solid #e6e6e6;
   background-color: #f9f9f9;
 }
-/* line 87, ../scss/_main.scss */
+/* line 92, ../scss/_main.scss */
 #featured-apps article .info h1 {
   margin: 0;
   font-size: 1.62em;
   line-height: 1;
 }
-/* line 92, ../scss/_main.scss */
+/* line 97, ../scss/_main.scss */
 #featured-apps article .info p {
   margin: 0;
   line-height: 1.62;
 }
-/* line 96, ../scss/_main.scss */
+/* line 101, ../scss/_main.scss */
 #featured-apps article .info p.short-description {
   position: absolute;
   left: 232px;
@@ -534,23 +542,19 @@ footer .content {
   font-size: 1.231em;
   line-height: 1.3125;
 }
-/* line 106, ../scss/_main.scss */
-#featured-apps article.show {
-  display: block;
-}
 
-/* line 111, ../scss/_main.scss */
+/* line 113, ../scss/_main.scss */
 section.ordering ul, section.categories ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-/* line 117, ../scss/_main.scss */
+/* line 119, ../scss/_main.scss */
 section.ordering li, section.categories li {
   margin: 2px 0;
 }
-/* line 120, ../scss/_main.scss */
+/* line 122, ../scss/_main.scss */
 section.ordering li a, section.ordering li label, section.categories li a, section.categories li label {
   display: block;
   padding: 5px 10px;
@@ -558,30 +562,30 @@ section.ordering li a, section.ordering li label, section.categories li a, secti
   text-decoration: none;
   background-color: #f9f9f9;
 }
-/* line 128, ../scss/_main.scss */
+/* line 130, ../scss/_main.scss */
 section.ordering li span.count, section.ordering li input, section.categories li span.count, section.categories li input {
   float: right;
 }
 
-/* line 133, ../scss/_main.scss */
+/* line 135, ../scss/_main.scss */
 section.app-grid {
   width: 970px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 136, ../scss/_main.scss */
+/* line 138, ../scss/_main.scss */
 section.app-grid > h1 {
   margin: 30px 0 10px 0;
   font-size: 1.62em;
 }
-/* line 140, ../scss/_main.scss */
+/* line 142, ../scss/_main.scss */
 section.app-grid > h1 a {
   font-size: 0.62em;
   font-weight: normal;
   text-decoration: none;
 }
-/* line 147, ../scss/_main.scss */
+/* line 149, ../scss/_main.scss */
 section.app-grid article {
   display: inline;
   float: left;
@@ -592,31 +596,31 @@ section.app-grid article {
 * html section.app-grid article {
   overflow-x: hidden;
 }
-/* line 150, ../scss/_main.scss */
+/* line 152, ../scss/_main.scss */
 section.app-grid article img {
   display: block;
 }
-/* line 154, ../scss/_main.scss */
+/* line 156, ../scss/_main.scss */
 section.app-grid article > a {
   text-decoration: none;
   color: #222222;
 }
-/* line 159, ../scss/_main.scss */
+/* line 161, ../scss/_main.scss */
 section.app-grid article h1 {
   margin: 10px 0 0 0;
   font-size: 1.231em;
 }
-/* line 164, ../scss/_main.scss */
+/* line 166, ../scss/_main.scss */
 section.app-grid article ul {
   margin: 0;
   padding: 0;
 }
-/* line 168, ../scss/_main.scss */
+/* line 170, ../scss/_main.scss */
 section.app-grid article ul li {
   display: inline;
   list-style-type: none;
 }
-/* line 174, ../scss/_main.scss */
+/* line 176, ../scss/_main.scss */
 section.app-grid article:nth-of-type(3) {
   display: inline;
   float: left;
@@ -627,41 +631,41 @@ section.app-grid article:nth-of-type(3) {
 * html section.app-grid article:nth-of-type(3) {
   overflow-x: hidden;
 }
-/* line 178, ../scss/_main.scss */
+/* line 180, ../scss/_main.scss */
 section.app-grid hr {
   clear: left;
   border-top: 0px;
   margin-bottom: 30px;
 }
 
-/* line 186, ../scss/_main.scss */
+/* line 188, ../scss/_main.scss */
 article#app header {
   position: relative;
 }
-/* line 189, ../scss/_main.scss */
+/* line 191, ../scss/_main.scss */
 article#app header h1 {
   margin: 0;
   font-size: 1.85em;
 }
-/* line 193, ../scss/_main.scss */
+/* line 195, ../scss/_main.scss */
 article#app header h1 span.developer {
   font-size: 0.55em;
   font-weight: normal;
 }
-/* line 199, ../scss/_main.scss */
+/* line 201, ../scss/_main.scss */
 article#app header #sharing {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 206, ../scss/_main.scss */
+/* line 208, ../scss/_main.scss */
 article#app .content {
   width: 970px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 209, ../scss/_main.scss */
+/* line 211, ../scss/_main.scss */
 article#app .content .screenshots {
   display: inline;
   float: left;
@@ -672,12 +676,12 @@ article#app .content .screenshots {
 * html article#app .content .screenshots {
   overflow-x: hidden;
 }
-/* line 212, ../scss/_main.scss */
+/* line 214, ../scss/_main.scss */
 article#app .content .screenshots img {
   display: block;
   margin: 1.62em 0;
 }
-/* line 217, ../scss/_main.scss */
+/* line 219, ../scss/_main.scss */
 article#app .content .description {
   display: inline;
   float: left;
@@ -688,18 +692,18 @@ article#app .content .description {
 * html article#app .content .description {
   overflow-x: hidden;
 }
-/* line 220, ../scss/_main.scss */
+/* line 222, ../scss/_main.scss */
 article#app .content .description p.summary {
   margin: 1.3125em 0;
   font-size: 1.23em;
   line-height: 1.3125;
 }
-/* line 226, ../scss/_main.scss */
+/* line 228, ../scss/_main.scss */
 article#app .content .description p {
   margin: 1.62em 0;
 }
 
-/* line 234, ../scss/_main.scss */
+/* line 236, ../scss/_main.scss */
 section#price-and-register p.price {
   margin: 0;
   padding: 10px;
@@ -707,7 +711,7 @@ section#price-and-register p.price {
   background-color: #f9f9f9;
   font-weight: bold;
 }
-/* line 241, ../scss/_main.scss */
+/* line 243, ../scss/_main.scss */
 section#price-and-register a {
   display: block;
   margin: 5px 0;
@@ -717,11 +721,17 @@ section#price-and-register a {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
   font-size: 1.23em;
 }
-/* line 250, ../scss/_main.scss */
+/* line 252, ../scss/_main.scss */
 section#price-and-register a:hover {
   background-color: #002868;
   color: #ffffff;
   text-shadow: none;
+}
+
+/* line 261, ../scss/_main.scss */
+table#facts th {
+  text-align: left;
+  padding-right: 14px;
 }
 
 /* ==|== non-semantic helper classes ========================================
