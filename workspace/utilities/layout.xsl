@@ -16,15 +16,15 @@
 				<meta name="description" content="" />
 				<meta name="author" content="Eliksir AS" />
 
-				<link rel="stylesheet" type="text/css" href="{$workspace}/css/site.css" />
+				<link rel="stylesheet" type="text/css" href="{$workspace}/assets/css/site.css" />
 
-				<script src="{$workspace}/js/libs/modernizr-2.0.6.min.js"></script>
+				<script src="{$workspace}/assets/js/libs/modernizr-2.0.6.min.js"></script>
 			</head>
 
 			<body>
 				<header>
 					<div class="content">
-						<a href="/"><img src="{$workspace}/img/logo.png" alt="Norske Webapps" /></a>
+						<a href="/"><img src="{$workspace}/assets/img/logo.png" alt="Norske Webapps" /></a>
 
 						<nav>
 							<ul>
@@ -52,8 +52,8 @@
 			</body>
 
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-			<script><![CDATA[window.jQuery || document.write('<script src="/workspace/js/libs/jquery-1.6.2.min.js"><\/script>')]]></script>
-			<script src="{$workspace}/js/app.js"></script>
+			<script><![CDATA[window.jQuery || document.write('<script src="/workspace/assets/js/libs/jquery-1.6.2.min.js"><\/script>')]]></script>
+			<script src="{$workspace}/assets/js/app.js"></script>
 
 			<!-- TODO: Activate Google Analytics
 			<script>
