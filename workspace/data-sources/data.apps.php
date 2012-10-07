@@ -19,7 +19,8 @@
 
 		public $dsParamINCLUDEDELEMENTS = array(
 				'navn',
-				'skjermbilder',
+				'skjermbilder: bilde',
+				'skjermbilder: hoved',
 				'nokkelord'
 		);
 
