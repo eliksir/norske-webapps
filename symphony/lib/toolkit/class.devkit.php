@@ -73,7 +73,7 @@
 					'content'		=> 'text/html; charset=UTF-8'
 				)
 			));
-			$this->addStylesheetToHead(URL . '/symphony/assets/devkit.css', 'screen');
+			$this->addStylesheetToHead(SYMPHONY_URL . '/assets/css/devkit.css', 'screen');
 		}
 
 		/**
@@ -84,9 +84,9 @@
 			$this->setTitle(__(
 				'%1$s &ndash; %2$s &ndash; %3$s',
 				array(
-					__('Symphony'),
+					$this->_pagedata['title'],
 					__($this->_title),
-					$this->_pagedata['title']
+					__('Symphony')
 				)
 			));
 
@@ -123,7 +123,7 @@
 			// Add edit link:
 			$item = new XMLElement('li');
 			$item->appendChild(Widget::Anchor(
-				__('Edit'), URL . '/symphony/blueprints/pages/edit/' . $this->_pagedata['id'] . '/'
+				__('Edit'), SYMPHONY_URL . '/blueprints/pages/edit/' . $this->_pagedata['id'] . '/'
 			));
 			$list->appendChild($item);
 
@@ -258,6 +258,7 @@
 		 */
 		public function build() {
 			$this->buildIncludes();
+			$this->_view = General::sanitize($this->_view);
 
 			$header = new XMLElement('div');
 			$header->setAttribute('id', 'header');

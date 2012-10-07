@@ -24,13 +24,13 @@
 	url = git://github.com/symphonycms/xssfilter.git
 [submodule "extensions/subsectionmanager"]
 	path = extensions/subsectionmanager
-	url = git://github.com/nilshoerrmann/subsectionmanager.git
+	url = git://github.com/hananils/subsectionmanager.git
 [submodule "extensions/publish_tabs"]
 	path = extensions/publish_tabs
 	url = git://github.com/nickdunn/publish_tabs.git
 [submodule "extensions/enhancedtaglist"]
 	path = extensions/enhancedtaglist
-	url = git://github.com/czheng/enhancedtaglist.git
+	url = git://github.com/symphonists/enhancedtaglist.git
 [submodule "extensions/autocomplete_tags"]
 	path = extensions/autocomplete_tags
 	url = git://github.com/tachyondecay/autocomplete_tags.git
@@ -42,4 +42,4 @@
 	url = git://github.com/symphonycms/numberfield.git
 [submodule "extensions/datemodified"]
 	path = extensions/datemodified
-	url = git://github.com/czheng/datemodified.git
+	url = git://github.com/symphonists/datemodified.git
