@@ -263,3 +263,19 @@ table#facts {
 		padding-right: 14px;
 	}
 }
+
+form {
+	.field {
+		clear: left;
+		margin: 0.5em 0;
+
+		label {
+			float: left;
+			width: 110px;
+		}
+
+		&.error label {
+			color: #990000;
+		}
+	}
+}

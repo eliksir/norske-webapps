@@ -87,7 +87,9 @@
 		}
 
 		public function load(){
-			if(isset($_POST['action']['send-tips'])) return $this->__trigger();
+			if (isset($_POST['action'][self::ROOTELEMENT])) {
+				return $this->__trigger();
+			}
 		}
 
 		protected function __trigger(){
@@ -114,6 +116,9 @@
 
 				$screens = $post['fields']['nytt-skjermklipp'];
 				foreach ($screens as $screen) {
+					if (empty($screen['bilde'])
+							|| $screen['bilde']['error'] !== 0) continue;
+
 					$entry = $entryManager->create();
 					$entry->set('section_id', $screen_section_id);
 
@@ -141,13 +146,16 @@
 
 				if (!empty($errors)) {
 					// Handle errors...
-					var_dump($errors);
+					//var_dump($errors);
+					$_POST['fields']['utvikler'] = null;
 				}
 				else {
 					// Change the main section field to a sub section entry reference
 					$_POST['fields']['utvikler'] = $entry->get('id');
 				}
 			}
+
+			$_POST['fields']['opprettet'] = time();
 
 			// Let the default section event to create the main entry
 			include(TOOLKIT . '/events/event.section.php');
