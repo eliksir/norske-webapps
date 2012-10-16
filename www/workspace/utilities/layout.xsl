@@ -30,7 +30,7 @@
 							<ul>
 								<li><a href="/">Hjem</a></li>
 								<li><a href="/">Webapps</a></li>
-								<li><a href="/send-tips/">Foreslå webapp</a></li>
+								<!--li><a href="/send-tips/">Foreslå webapp</a></li-->
 							</ul>
 						</nav>
 					</div>
