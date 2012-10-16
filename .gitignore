@@ -7,8 +7,8 @@ manifest/
 *.esproj
 *~
 *.geany
-install-log.txt
 _docs/
 symphony-2.wiki/
 *.sass-cache
 www/workspace/screenshots/*
+www/install/logs
