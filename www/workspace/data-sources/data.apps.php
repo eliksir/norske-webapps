@@ -14,7 +14,7 @@
 		public $dsParamASSOCIATEDENTRYCOUNTS = 'no';
 
 		public $dsParamFILTERS = array(
-				'22' => '{$url-type}',
+				'19' => '{$url-type}',
 		);
 
 		public $dsParamINCLUDEDELEMENTS = array(
