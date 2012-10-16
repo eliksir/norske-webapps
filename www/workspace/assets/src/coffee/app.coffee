@@ -70,5 +70,8 @@ jQuery ($) ->
 		sortValue = $('.ordering input:checked').val()
 		categoriesValue = (elem.value for elem in $ '.categories input:checked').join '+'
 
-		window.location.search = "?sort=#{sortValue}" +
-			("&type=#{encodeURIComponent categoriesValue}" unless categoriesValue == '')
+		if categoriesValue == ''
+			window.location.search = "?sort=#{sortValue}"
+		else
+			window.location.search = "?sort=#{sortValue}" +
+				("&type=#{encodeURIComponent categoriesValue}" unless categoriesValue == '')

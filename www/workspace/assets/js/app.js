@@ -79,7 +79,11 @@
         }
         return _results;
       })()).join('+');
-      return window.location.search = ("?sort=" + sortValue) + (categoriesValue !== '' ? "&type=" + (encodeURIComponent(categoriesValue)) : void 0);
+      if (categoriesValue === '') {
+        return window.location.search = "?sort=" + sortValue;
+      } else {
+        return window.location.search = ("?sort=" + sortValue) + (categoriesValue !== '' ? "&type=" + (encodeURIComponent(categoriesValue)) : void 0);
+      }
     });
   });
 
