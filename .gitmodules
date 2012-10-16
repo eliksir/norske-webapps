@@ -1,45 +1,45 @@
-[submodule "extensions/export_ensemble"]
-	path = extensions/export_ensemble
+[submodule "www/extensions/export_ensemble"]
+	path = www/extensions/export_ensemble
 	url = git://github.com/symphonycms/export_ensemble.git
-[submodule "extensions/markdown"]
-	path = extensions/markdown
+[submodule "www/extensions/markdown"]
+	path = www/extensions/markdown
 	url = git://github.com/symphonycms/markdown.git
-[submodule "extensions/maintenance_mode"]
-	path = extensions/maintenance_mode
+[submodule "www/extensions/maintenance_mode"]
+	path = www/extensions/maintenance_mode
 	url = git://github.com/symphonycms/maintenance_mode.git
-[submodule "extensions/selectbox_link_field"]
-	path = extensions/selectbox_link_field
+[submodule "www/extensions/selectbox_link_field"]
+	path = www/extensions/selectbox_link_field
 	url = git://github.com/symphonycms/selectbox_link_field.git
-[submodule "extensions/jit_image_manipulation"]
-	path = extensions/jit_image_manipulation
+[submodule "www/extensions/jit_image_manipulation"]
+	path = www/extensions/jit_image_manipulation
 	url = git://github.com/symphonycms/jit_image_manipulation.git
-[submodule "extensions/profiledevkit"]
-	path = extensions/profiledevkit
+[submodule "www/extensions/profiledevkit"]
+	path = www/extensions/profiledevkit
 	url = git://github.com/symphonycms/profiledevkit.git
-[submodule "extensions/debugdevkit"]
-	path = extensions/debugdevkit
+[submodule "www/extensions/debugdevkit"]
+	path = www/extensions/debugdevkit
 	url = git://github.com/symphonycms/debugdevkit.git
-[submodule "extensions/xssfilter"]
-	path = extensions/xssfilter
+[submodule "www/extensions/xssfilter"]
+	path = www/extensions/xssfilter
 	url = git://github.com/symphonycms/xssfilter.git
-[submodule "extensions/subsectionmanager"]
-	path = extensions/subsectionmanager
+[submodule "www/extensions/subsectionmanager"]
+	path = www/extensions/subsectionmanager
 	url = git://github.com/hananils/subsectionmanager.git
-[submodule "extensions/publish_tabs"]
-	path = extensions/publish_tabs
+[submodule "www/extensions/publish_tabs"]
+	path = www/extensions/publish_tabs
 	url = git://github.com/nickdunn/publish_tabs.git
-[submodule "extensions/enhancedtaglist"]
-	path = extensions/enhancedtaglist
+[submodule "www/extensions/enhancedtaglist"]
+	path = www/extensions/enhancedtaglist
 	url = git://github.com/symphonists/enhancedtaglist.git
-[submodule "extensions/autocomplete_tags"]
-	path = extensions/autocomplete_tags
+[submodule "www/extensions/autocomplete_tags"]
+	path = www/extensions/autocomplete_tags
 	url = git://github.com/tachyondecay/autocomplete_tags.git
-[submodule "extensions/incrementnumberfield"]
-	path = extensions/incrementnumberfield
+[submodule "www/extensions/incrementnumberfield"]
+	path = www/extensions/incrementnumberfield
 	url = git://github.com/nickdunn/incrementnumberfield.git
-[submodule "extensions/numberfield"]
-	path = extensions/numberfield
+[submodule "www/extensions/numberfield"]
+	path = www/extensions/numberfield
 	url = git://github.com/symphonycms/numberfield.git
-[submodule "extensions/datemodified"]
-	path = extensions/datemodified
+[submodule "www/extensions/datemodified"]
+	path = www/extensions/datemodified
 	url = git://github.com/symphonists/datemodified.git

@@ -11,4 +11,4 @@ install-log.txt
 _docs/
 symphony-2.wiki/
 *.sass-cache
-workspace/screenshots/*
+www/workspace/screenshots/*
