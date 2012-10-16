@@ -40,10 +40,10 @@
 				<xsl:apply-templates select="nyeste/entry" mode="app-grid" />
 			</section>
 
-			<section id="popular-apps" class="app-grid">
+			<!--section id="popular-apps" class="app-grid">
 				<h1>Populære webapps <a href="/apps/?sort=visninger">vis alle ▶</a></h1>
 				<xsl:apply-templates select="mest-vist/entry" mode="app-grid" />
-			</section>
+			</section-->
 		</div>
 	</xsl:template>
 
