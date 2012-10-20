@@ -42,11 +42,13 @@
 
 				<footer>
 					<div class="content">
+						<!--
 						© <a href="http://e5r.no/">Eliksir AS</a>.
 						<ul class="info">
 							<li><a href="/hva-er-webapps/">Hva er webapps?</a></li>
 							<li><a href="/om-webapps-no/">Om webapps.no</a></li>
 						</ul>
+						-->
 					</div>
 				</footer>
 			</body>
