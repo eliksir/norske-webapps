@@ -8,16 +8,17 @@
 		<aside>
 			<h1>Om webapps.no</h1>
 			<p>
-				Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet
-				ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut
-				potenti pellentesque quisque. In eget sapien sed, sit duis
-				vestibulum ultricies, placerat morbi amet vel, nullam in in
-				lorem vel. In molestie elit dui dictum, praesent nascetur
-				pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra.
+				Her finner du en oversikt over <em>nyttige</em>, norske webapps –
+				tjenester på Internett som <em>forenkler din hverdag</em>.
+				Alle webapps du finner her er på norsk, med norsk brukerstøtte.
 			</p>
 			<p>
-				<a href="">Hva er webapps?</a>&#160;<a href="">Hvem står bak?</a>
+				Trenger du hjelp til fakturering, markedsføring eller annet? Bruk lenkene
+				nedenfor for en oversikt over hva som er tilgjengelig for ditt behov.
 			</p>
+			<!--p>
+				<a href="">Hva er webapps?</a>&#160;<a href="">Hvem står bak?</a>
+			</p-->
 
 			<section class="categories">
 				<h1>Finn webapps</h1>

@@ -51,8 +51,15 @@
 				</footer>
 			</body>
 
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-			<script><![CDATA[window.jQuery || document.write('<script src="/workspace/assets/js/libs/jquery-1.6.2.min.js"><\/script>')]]></script>
+			<xsl:choose>
+				<xsl:when test="contains($current-url, '.local')">
+					<script src="{$workspace}/assets/js/libs/jquery-1.8.2.js"></script>
+				</xsl:when>
+				<xsl:otherwise>
+					<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+					<script><![CDATA[window.jQuery || document.write('<script src="/workspace/assets/js/libs/jquery-1.8.2.js"><\/script>')]]></script>
+				</xsl:otherwise>
+			</xsl:choose>
 			<script src="{$workspace}/assets/js/app.js"></script>
 
 			<!-- TODO: Activate Google Analytics
