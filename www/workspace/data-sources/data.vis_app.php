@@ -24,6 +24,7 @@
 				'system:date',
 				'navn',
 				'undertittel',
+				'beskrivelse: formatted',
 				'utvikler: navn',
 				'utvikler: nettside',
 				'fra-manedspris',
@@ -34,7 +35,8 @@
 				'skjermbilder: bilde',
 				'skjermbilder: hoved',
 				'nokkelord',
-				'opprettet'
+				'opprettet',
+				'visninger: increment'
 		);
 		
 
@@ -51,7 +53,7 @@
 					'website' => 'http://webapps.local:8080',
 					'email' => 'frode@e5r.no'),
 				'version' => 'Symphony 2.3.1RC1',
-				'release-date' => '2012-10-07T23:47:52+00:00'
+				'release-date' => '2012-10-24T20:16:00+00:00'
 			);
 		}
 
